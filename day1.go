@@ -6,7 +6,7 @@ import (
 
 func day1_part1() int {
 
-	str := readFile("day1.txt")
+	str := readFile("inputs/day1.txt")
 	max := 0
 	total := 0
 	for _, element := range str {
@@ -27,7 +27,7 @@ func day1_part1() int {
 
 func day1_part2() int {
 
-	str := readFile("day1.txt")
+	str := readFile("inputs/day1.txt")
 	max := [3]int{0, 0, 0}
 	total := 0
 	for _, element := range str {

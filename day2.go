@@ -21,7 +21,7 @@ var matcher = map[string]int{
 }
 
 func day2_part1() (r int) {
-	str := readFile("day2.txt")
+	str := readFile("inputs/day2.txt")
 	for _, el := range str {
 		spl := strings.Split(el, " ")
 		player := spl[1]
@@ -41,7 +41,7 @@ func day2_part1() (r int) {
 }
 
 func day2_part2() (r int) {
-	str := readFile("day2.txt")
+	str := readFile("inputs/day2.txt")
 	for _, el := range str {
 		spl := strings.Split(el, " ")
 		player := spl[1]

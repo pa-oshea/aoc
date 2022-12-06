@@ -5,7 +5,7 @@ import (
 )
 
 func day3_part1() (r int) {
-	str := readFile("day3.txt")
+	str := readFile("inputs/day3.txt")
 
 	for _, el := range str {
 		found := map[rune]int{}
@@ -36,7 +36,7 @@ func day3_part1() (r int) {
 
 func day3_part2() (r int) {
 
-	str := readFile("day3.txt")
+	str := readFile("inputs/day3.txt")
 
 	index := -1
 	group := [3]string{}
