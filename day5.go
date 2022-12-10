@@ -13,10 +13,6 @@ type instructions struct {
 	count, from, to int
 }
 
-func remove(slice []string, s int) []string {
-	return append(slice[:s], slice[s+1:]...)
-}
-
 func getOurStacks(str string) stack {
 	stacks := make(stack)
 	lines := strings.Split(str, "\n")
@@ -83,8 +79,8 @@ func day5() {
 		str := strings.Split(string(content), "\n\n")
 		stacks := getOurStacks(str[0])
 		doThaThing(str[1], stacks, "9001")
-        fmt.Print("day 5: ")
+		fmt.Print("day 5: ")
 		printMap(stacks)
-        fmt.Print("\n")
+		fmt.Print("\n")
 	}
 }

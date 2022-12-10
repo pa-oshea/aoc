@@ -2,9 +2,8 @@ package main
 
 func day6(n int) int {
 	str := readFile("inputs/day6.txt")
-    // stupid go making an array of one string
+	// stupid go making an array of one string
 	s := str[0]
-	marker := 0
 
 	charFrequency := map[string]int{}
 	for i, j := 0, 0; j < len(s); j++ {
@@ -20,5 +19,5 @@ func day6(n int) int {
 			return j + 1
 		}
 	}
-	return marker
+	return 0
 }
